@@ -1,11 +1,17 @@
-import './App.css';
+import Map from './components/Map.tsx';
+import LocationSearch from './components/LocationSearch.tsx';
 
 function App() {
   return (
-    <>
-      <h1 className='bg-red-200'>This is MapView</h1>
-      <h2>This is this</h2>
-    </>
+    <div className='h-screen w-screen grid grid-cols-12'>
+      <div className='col-span-3 p-2'>
+        <LocationSearch />
+      </div>
+
+      <div className='col-span-9'>
+        <Map />
+      </div>
+    </div>
   );
 }
 
