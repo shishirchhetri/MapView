@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import type { Place } from '../api/place';
+import { search } from '../api/search';
 
 interface LocationSearchProps {
   onPlaceClick: (place: Place) => void;
@@ -12,6 +13,7 @@ export default function LocationSearch({ onPlaceClick }: LocationSearchProps) {
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event?.preventDefault();
     console.log('Need to search API..', term);
+    await search(term);
   }
 
   return (
@@ -28,7 +30,6 @@ export default function LocationSearch({ onPlaceClick }: LocationSearchProps) {
           value={term}
           onChange={(e) => setTerm(e.target.value)}
         />
-        <button>Submit</button>
       </form>
     </div>
   );
