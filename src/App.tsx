@@ -1,3 +1,5 @@
+import type { Place } from './api/place.ts';
+
 import Map from './components/Map.tsx';
 import LocationSearch from './components/LocationSearch.tsx';
 
