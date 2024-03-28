@@ -41,7 +41,7 @@ export default function LocationSearch({ onPlaceClick }: LocationSearchProps) {
               <p className='text-sm'>{place.name}</p>
               <button
                 className='bg-blue-500 text-xs text-white font-bold py-1 px-1 rounded'
-                onClick={() => onPlaceClick}
+                onClick={() => onPlaceClick(place)}
               >
                 Go
               </button>
