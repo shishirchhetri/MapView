@@ -41,9 +41,9 @@ js npm run dev
 - Leaflet.js
 - OpenStreetMap API
 
-## Credits
+## Live Demo
 
-This project was created by Shishir Chhetri.
+https://open-map.netlify.app/
 
 ## License
 
